@@ -1,0 +1,11 @@
+<strong><%=@employee.first_name%>
+<%=@employee.last_name%></strong><br>
+<%="aka #{@employee.alias}"%><br>
+<%=image_tag @employee.img_url%><br>
+Title:
+<%= @employee.title%><br>
+Office:
+<%= @employee.office%><br>
+Dog:
+<%=link_to @employee.dog.name, @employee.dog%>
+
